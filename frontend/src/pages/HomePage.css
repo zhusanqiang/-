@@ -1,0 +1,93 @@
+.home-layout {
+    background: transparent;
+}
+
+.home-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color-dark);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo .anticon { color: var(--primary-color); }
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.form-card {
+    width: 800px;
+    padding: 16px 40px 40px 40px !important;
+    border-radius: 12px;
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.form-header h2 { color: var(--text-color-dark); }
+.form-header .ant-typography { color: var(--text-color-light); }
+
+.form-section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    margin-bottom: 16px !important;
+    color: var(--text-color-dark) !important;
+}
+
+.upload-dragger { padding: 20px 0; }
+.upload-dragger .ant-upload-drag-icon .anticon { color: var(--primary-color) !important; }
+
+.scene-card {
+    border-radius: 8px; text-align: center; cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+.scene-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow);
+    border-color: var(--primary-color);
+}
+.scene-card.selected {
+    border-color: var(--primary-color);
+    background-color: #eff6ff;
+    color: var(--primary-color);
+}
+.scene-card .ant-card-body {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 8px; padding: 16px;
+}
+.scene-card .anticon { font-size: 24px; }
+.scene-card span { font-weight: 500; }
+
+.sub-scene-card {
+    margin-top: 16px; background: #f7f8fa; border-radius: 6px;
+    border-color: var(--border-color);
+}
+.sub-scene-card p { margin-bottom: 10px; font-weight: 500; }
+
+.submit-button {
+    height: 48px !important; font-size: 16px !important;
+    font-weight: 500; border-radius: 8px;
+}

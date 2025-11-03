@@ -1,0 +1,22 @@
+# backend/requirements.txt
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.1
+python-dotenv
+redis
+requests
+python-multipart>=0.0.9
+aiofiles
+python-docx
+weasyprint
+pydantic-settings
+pypandoc
+
+# =================================================================
+# <<< 核心修复点 >>>
+# 1. 添加 htmldocx，这是我们新版 file_service.py 需要的库
+# 2. 将 markdown-it-py 替换为标准的 markdown 库，以匹配代码中的导入
+# =================================================================
+htmldocx
+markdown
